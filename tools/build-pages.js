@@ -39,7 +39,7 @@ ${JSON.stringify(schema, null, 2)}
 </script>
 </head>
 <body>
-${header.replace(`href="/${slug}"`, `href="/${slug}" aria-current="page"`)}
+${header.replaceAll(`href="/${slug}"`, `href="/${slug}" aria-current="page"`)}
 
 <main id="main">
 ${body}
