@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gaelic Burger | Award-Winning Gourmet Burgers in Naas, Co. Kildare</title>
-<meta name="description" content="100% Irish owned gourmet burgers in Naas, Co. Kildare. Best Burger in Leinster 2021 and Best Gourmet Burger Specialist 2022. Order online or call 045 916 090.">
+<meta name="description" content="100% Irish owned gourmet burgers in Naas, Co. Kildare. Best Burger in Leinster 2021 and Best Gourmet Burger Specialist 2022. Order online or call +353 45 916 090.">
 <link rel="canonical" href="https://gaelic-burger.vercel.app/">
 <meta name="theme-color" content="#123d2b">
 <meta property="og:type" content="restaurant">
@@ -15,11 +15,12 @@
 <meta property="og:image" content="https://gaelic-burger.vercel.app/images/og-image.jpg">
 <meta property="og:locale" content="en_IE">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon.png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Caveat+Brush&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 <link rel="preload" as="image" href="/images/truck-day.webp" type="image/webp">
 <script type="application/ld+json">
@@ -49,9 +50,10 @@
 <a class="skip" href="#main">Skip to content</a>
 
 <div class="topbar">
-  <span>100% Irish Owned &middot; Naas, Co. Kildare</span>
-  <a href="tel:+35345916090">045 916 090</a>
+  <span>☘ 100% Irish Owned &middot; Naas, Co. Kildare</span>
+  <a href="tel:+35345916090">+353 45 916 090</a>
 </div>
+<div class="tricolour" aria-hidden="true"><i></i><i></i><i></i></div>
 
 <header class="header">
   <a href="/" class="logo" aria-label="Gaelic Burger home">
@@ -67,13 +69,16 @@
 
 <main id="main">
   <section class="hero">
+    <img class="float f1" src="/images/shamrock.svg" alt="" width="70" height="70">
+    <img class="float f2" src="/images/shamrock-outline.svg" alt="" width="44" height="44">
+    <img class="float f3" src="/images/shamrock.svg" alt="" width="34" height="34">
     <div class="hero-copy">
-      <p class="eyebrow">Gourmet Burgers &middot; Passion &middot; Quality</p>
-      <h1>Proper Irish burgers, made the way they should be.</h1>
+      <p class="scribble">Céad míle fáilte!</p>
+      <h1>Proper <span class="hl">Irish</span> burgers, made the way they should be.</h1>
       <p class="lead">Farm to fork, 100% Irish owned, and cooked to order in Naas. The burger Leinster voted best in 2021.</p>
       <div class="actions">
         <a class="btn" href="https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas" target="_blank" rel="noopener">Order Online</a>
-        <a class="btn btn-ghost" href="tel:+35345916090">Call 045 916 090</a>
+        <a class="btn btn-ghost" href="tel:+35345916090">Call +353 45 916 090</a>
       </div>
     </div>
     <figure class="hero-photo">
@@ -81,57 +86,74 @@
         <source srcset="/images/truck-day.webp" type="image/webp">
         <img src="/images/truck-day.jpg" alt="Customers ordering at the Gaelic Burger food truck in Naas" width="640" height="480" fetchpriority="high">
       </picture>
+      <div class="sticker" aria-hidden="true">
+        <span>Best Burger</span><strong>in Leinster</strong><span>2021 🏆</span>
+      </div>
     </figure>
   </section>
 
-  <section class="awards" aria-label="Awards">
-    <div class="award">
-      <span class="award-year">2021</span>
-      <span class="award-name">Best Burger in Leinster</span>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Gourmet Burgers</span><img src="/images/shamrock.svg" alt=""><span>Passion</span><img src="/images/shamrock.svg" alt=""><span>Quality</span><img src="/images/shamrock.svg" alt=""><span>Farm to Fork</span><img src="/images/shamrock.svg" alt=""><span>100% Irish Owned</span><img src="/images/shamrock.svg" alt="">
+      <span>Gourmet Burgers</span><img src="/images/shamrock.svg" alt=""><span>Passion</span><img src="/images/shamrock.svg" alt=""><span>Quality</span><img src="/images/shamrock.svg" alt=""><span>Farm to Fork</span><img src="/images/shamrock.svg" alt=""><span>100% Irish Owned</span><img src="/images/shamrock.svg" alt="">
     </div>
-    <div class="award">
+  </div>
+
+  <section class="awards" aria-label="Awards">
+    <div class="award a1">
+      <span class="award-year">2021</span>
+      <span class="award-name">Best Burger<br>in Leinster</span>
+      <span class="award-cup" aria-hidden="true">🏆</span>
+    </div>
+    <div class="award a2">
       <span class="award-year">2022</span>
-      <span class="award-name">Best Gourmet Burger Specialist</span>
+      <span class="award-name">Best Gourmet<br>Burger Specialist</span>
+      <span class="award-cup" aria-hidden="true">🏆</span>
     </div>
   </section>
 
   <section id="food" class="food">
     <div class="section-head">
-      <p class="eyebrow">Our Food</p>
-      <h2>Burgers, fresh-cut chips and not much else to explain.</h2>
+      <p class="scribble">What's cooking</p>
+      <h2>Burgers, fresh-cut chips and <span class="hl">good craic.</span></h2>
     </div>
     <div class="food-grid">
       <figure class="food-photo">
         <img src="/images/burger.webp" alt="Double smash burger with crispy bacon and melted cheese in a Gaelic Burger wrapper" width="300" height="320" loading="lazy">
+        <figcaption class="scribble">the real deal ↗</figcaption>
       </figure>
       <ul class="food-list">
-        <li><h3>Gourmet Burgers</h3><p>Soft brioche buns, stacked high and cooked to order.</p></li>
-        <li><h3>Cheese Steak</h3><p>Our take on the classic, stacked high and dripping.</p></li>
-        <li><h3>Loaded Fries</h3><p>Fresh-cut chips loaded up with the good stuff.</p></li>
-        <li><h3>Fresh Cut Chips</h3><p>Fresh cut, cooked crisp, salted right.</p></li>
+        <li><img src="/images/shamrock.svg" alt="" width="34" height="34"><div><h3>Gourmet Burgers</h3><p>Soft brioche buns, stacked high and cooked to order.</p></div></li>
+        <li><img src="/images/shamrock.svg" alt="" width="34" height="34"><div><h3>Cheese Steak</h3><p>Our take on the classic, stacked high and dripping.</p></div></li>
+        <li><img src="/images/shamrock.svg" alt="" width="34" height="34"><div><h3>Loaded Fries</h3><p>Fresh-cut chips loaded up with the good stuff.</p></div></li>
+        <li><img src="/images/shamrock.svg" alt="" width="34" height="34"><div><h3>Fresh Cut Chips</h3><p>Fresh cut, cooked crisp, salted right.</p></div></li>
       </ul>
     </div>
-    <a class="link-arrow" href="https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas" target="_blank" rel="noopener">See the full menu and order &rarr;</a>
+    <a class="btn" href="https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas" target="_blank" rel="noopener">See the full menu &amp; order</a>
   </section>
 
   <section id="story" class="story">
-    <figure class="story-photo">
-      <img src="/images/green-wall.webp" alt="Gaelic Burger sign on a living green wall" width="600" height="522" loading="lazy">
-    </figure>
     <div class="story-copy">
-      <p class="eyebrow eyebrow-light">Our Story</p>
-      <h2>Irish owned. Farm to fork.</h2>
+      <p class="scribble scribble-light">Our story</p>
+      <h2>Irish owned.<br><span class="hl">Farm to fork.</span></h2>
       <p>Gaelic Burger is 100% Irish owned and built on a farm-to-fork approach: good Irish produce, cooked to order and served without shortcuts.</p>
       <p>Whether you find us in Naas or at an event, the promise is the same: gourmet burgers, made with passion and quality.</p>
     </div>
+    <figure class="story-photo">
+      <img src="/images/green-wall.webp" alt="Gaelic Burger sign on a living green wall" width="600" height="522" loading="lazy">
+    </figure>
   </section>
 
   <section class="night">
-    <picture>
-      <source srcset="/images/truck-night.webp" type="image/webp">
-      <img src="/images/truck-night.jpg" alt="Queue at the Gaelic Burger truck at a night event" width="467" height="428" loading="lazy">
-    </picture>
+    <figure class="polaroid">
+      <picture>
+        <source srcset="/images/truck-night.webp" type="image/webp">
+        <img src="/images/truck-night.jpg" alt="Queue at the Gaelic Burger truck at a night event" width="467" height="428" loading="lazy">
+      </picture>
+      <figcaption>Out at an event</figcaption>
+    </figure>
     <div class="night-copy">
+      <p class="scribble">Sláinte!</p>
       <h2>Find us at events too.</h2>
       <p>Follow us for where we're popping up next.</p>
       <div class="socials">
@@ -143,12 +165,12 @@
 
   <section id="visit" class="visit">
     <div>
-      <p class="eyebrow">Find Us</p>
+      <p class="scribble">Find us</p>
       <h2>Come hungry.</h2>
-      <p class="visit-place">Naas, Co. Kildare</p>
+      <p class="visit-place">Naas, Co. Kildare &middot; <a href="tel:+35345916090">+353 45 916 090</a></p>
       <div class="actions">
         <a class="btn" href="https://maps.app.goo.gl/uh41q87rJhTMWopP6" target="_blank" rel="noopener">Get Directions</a>
-        <a class="btn btn-ghost-dark" href="tel:+35345916090">045 916 090</a>
+        <a class="btn btn-ghost-dark" href="tel:+35345916090">Call Us</a>
       </div>
     </div>
     <div class="reviews">
@@ -159,14 +181,16 @@
 </main>
 
 <footer class="footer">
-  <img src="/images/logo.webp" alt="" width="72" height="68" loading="lazy">
+  <div class="tricolour" aria-hidden="true"><i></i><i></i><i></i></div>
+  <img class="footer-logo" src="/images/logo.webp" alt="" width="84" height="79" loading="lazy">
+  <p class="scribble scribble-light">Go raibh maith agat!</p>
   <nav aria-label="Social">
     <a href="https://www.instagram.com/gaelicburger" target="_blank" rel="noopener">Instagram</a>
     <a href="https://www.facebook.com/Gaelicburger/" target="_blank" rel="noopener">Facebook</a>
     <a href="https://www.linkedin.com/company/gaelic-burger" target="_blank" rel="noopener">LinkedIn</a>
     <a href="https://www.tripadvisor.com/Restaurant_Review-g551559-d23295632-Reviews-Gaelic_Burger_Coffee-Naas_County_Kildare.html" target="_blank" rel="noopener">Tripadvisor</a>
   </nav>
-  <p>Gaelic Burger &middot; Naas, Co. Kildare &middot; <a href="tel:+35345916090">045 916 090</a></p>
+  <p>Gaelic Burger &middot; Naas, Co. Kildare &middot; <a href="tel:+35345916090">+353 45 916 090</a></p>
   <p class="small">&copy; 2026 Gaelic Burger. 100% Irish Owned.</p>
 </footer>
 </body>
