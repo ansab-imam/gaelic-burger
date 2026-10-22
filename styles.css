@@ -195,3 +195,19 @@ address{font-style:normal;font-size:1.1rem;line-height:1.5;margin-bottom:12px}
   .about-grid .polaroid{margin:auto}
   .map-wrap iframe{height:320px}
 }
+.story-illo{display:grid;place-items:center;padding:clamp(32px,5vw,64px)}
+.story-illo img{width:min(420px,100%);animation:bob 5s ease-in-out infinite}
+.price{margin-left:auto;font-family:var(--display);font-size:1.4rem;color:var(--forest);white-space:nowrap;padding-left:12px}
+.food-list li div{flex:1}
+.menu-list li{align-items:center}
+.prose{max-width:780px;margin:auto;padding:clamp(48px,7vw,88px) clamp(16px,4vw,32px)}
+.prose h2{font-size:clamp(1.6rem,3vw,2.2rem);margin:40px 0 12px}
+.prose p,.prose li{color:var(--muted);margin-bottom:12px}
+.prose ul{padding-left:22px}
+.allergen-grid{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;padding:0!important;margin:20px 0}
+.allergen-grid li{background:#fff;border:2.5px solid var(--forest-2);border-radius:14px;padding:12px 14px;font-weight:600;color:var(--ink)!important;margin:0!important}
+.notfound{text-align:center;padding:clamp(64px,10vw,120px) 16px}
+.notfound img{width:min(280px,70%);margin:0 auto 24px}
+.notfound h1{font-size:clamp(2.6rem,7vw,4.6rem);margin-bottom:10px}
+.notfound p{color:var(--muted);margin-bottom:28px}
+.notfound .actions{justify-content:center}
