@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gaelic Burger</title>
+<meta name="description" content="Gaelic Burger – proper Irish burgers, ordered online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <a href="#" class="brand">
+    <img src="logo.png" alt="Gaelic Burger logo" onerror="this.remove()">
+    <span>☘ Gaelic Burger</span>
+  </a>
+  <button class="cart-btn" id="openCart">🛒 <span id="cartCount">0</span></button>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Burgers with a<br><em>bit of Irish soul</em></h1>
+    <p>Grass-fed Irish beef, Dubliner cheddar and a whole lot of craic. Order now and we'll fire up the grill.</p>
+    <a href="#menu" class="btn">Order Now</a>
+  </div>
+  <img class="hero-img" src="hero.jpg" alt="Gaelic Burger" onerror="this.style.display='none'">
+</section>
+
+<section id="menu" class="menu">
+  <h2>The Menu</h2>
+  <div class="grid" id="menuGrid"></div>
+</section>
+
+<footer>☘ Gaelic Burger · Sláinte! · © <span id="yr"></span></footer>
+
+<aside class="cart" id="cart">
+  <div class="cart-head"><h3>Your Order</h3><button id="closeCart">✕</button></div>
+  <div id="cartItems"></div>
+  <div class="total">Total: <strong id="cartTotal">€0.00</strong></div>
+  <form id="checkout">
+    <input name="name" placeholder="Your name" required>
+    <input name="phone" placeholder="Phone" type="tel" required>
+    <input name="address" placeholder="Delivery address" required>
+    <textarea name="notes" placeholder="Notes (no onions, extra sauce…)"></textarea>
+    <button class="btn full" type="submit">Place Order</button>
+  </form>
+</aside>
+<div class="overlay" id="overlay"></div>
+
+<div class="modal" id="done" hidden>
+  <div class="modal-box">
+    <h3>Go raibh maith agat! ☘</h3>
+    <p>Your order is in. We'll ring you shortly to confirm.</p>
+    <button class="btn" id="closeDone">Grand</button>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
