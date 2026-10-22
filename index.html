@@ -33,7 +33,14 @@
   "image": "https://gaelic-burger.vercel.app/images/og-image.jpg",
   "telephone": "+353 45 916 090",
   "servesCuisine": ["Burgers", "Irish"],
-  "address": {"@type": "PostalAddress", "addressLocality": "Naas", "addressRegion": "Co. Kildare", "addressCountry": "IE"},
+  "address": {"@type": "PostalAddress", "streetAddress": "Newhall", "addressLocality": "Naas", "addressRegion": "Co. Kildare", "postalCode": "W91 VK8P", "addressCountry": "IE"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 53.2139873, "longitude": -6.7221412},
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "09:00", "closes": "18:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "09:00", "closes": "20:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:30", "closes": "19:00"}
+  ],
+  "hasMenu": "https://gaelic-burger.vercel.app/menu",
   "hasMap": "https://maps.app.goo.gl/uh41q87rJhTMWopP6",
   "award": ["Best Burger in Leinster 2021", "Best Gourmet Burger Specialist 2022"],
   "potentialAction": {"@type": "OrderAction", "target": "https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas"},
@@ -60,9 +67,9 @@
     <img src="/images/logo.webp" alt="Gaelic Burger" width="64" height="60">
   </a>
   <nav aria-label="Main">
-    <a href="#food">Our Food</a>
-    <a href="#story">Our Story</a>
-    <a href="#visit">Find Us</a>
+    <a href="/menu">Menu</a>
+    <a href="/about">Our Story</a>
+    <a href="/contact">Find Us</a>
   </nav>
   <a class="btn btn-sm" href="https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas" target="_blank" rel="noopener">Order Online</a>
 </header>
@@ -129,7 +136,7 @@
         <li><img src="/images/shamrock.svg" alt="" width="34" height="34"><div><h3>Fresh Cut Chips</h3><p>Fresh cut, cooked crisp, salted right.</p></div></li>
       </ul>
     </div>
-    <a class="btn" href="https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas" target="_blank" rel="noopener">See the full menu &amp; order</a>
+    <div class="actions"><a class="btn" href="/menu">See the menu</a><a class="btn btn-ghost-dark" href="https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas" target="_blank" rel="noopener">Order Online</a></div>
   </section>
 
   <section id="story" class="story">
@@ -167,14 +174,14 @@
     <div>
       <p class="scribble">Find us</p>
       <h2>Come hungry.</h2>
-      <p class="visit-place">Naas, Co. Kildare &middot; <a href="tel:+35345916090">+353 45 916 090</a></p>
+      <p class="visit-place">Newhall, Naas, Co. Kildare, W91 VK8P<br>Open 7 days &middot; Mon–Thu 9am–6:30pm &middot; Fri–Sat 9am–8:30pm &middot; Sun 10:30am–7pm</p>
       <div class="actions">
         <a class="btn" href="https://maps.app.goo.gl/uh41q87rJhTMWopP6" target="_blank" rel="noopener">Get Directions</a>
-        <a class="btn btn-ghost-dark" href="tel:+35345916090">Call Us</a>
+        <a class="btn btn-ghost-dark" href="/contact">Hours &amp; Info</a>
       </div>
     </div>
     <div class="reviews">
-      <p>Eaten with us? We'd love to hear what you thought.</p>
+      <p class="rating"><strong>4.7 ★</strong> from 450+ Google reviews.</p><p>Eaten with us? We'd love to hear what you thought.</p>
       <a class="link-arrow" href="https://www.tripadvisor.com/Restaurant_Review-g551559-d23295632-Reviews-Gaelic_Burger_Coffee-Naas_County_Kildare.html" target="_blank" rel="noopener">Read our reviews on Tripadvisor &rarr;</a>
     </div>
   </section>
@@ -184,13 +191,18 @@
   <div class="tricolour" aria-hidden="true"><i></i><i></i><i></i></div>
   <img class="footer-logo" src="/images/logo.webp" alt="" width="84" height="79" loading="lazy">
   <p class="scribble scribble-light">Go raibh maith agat!</p>
+  <nav aria-label="Footer">
+    <a href="/menu">Menu</a>
+    <a href="/about">Our Story</a>
+    <a href="/contact">Find Us</a>
+  </nav>
   <nav aria-label="Social">
     <a href="https://www.instagram.com/gaelicburger" target="_blank" rel="noopener">Instagram</a>
     <a href="https://www.facebook.com/Gaelicburger/" target="_blank" rel="noopener">Facebook</a>
     <a href="https://www.linkedin.com/company/gaelic-burger" target="_blank" rel="noopener">LinkedIn</a>
     <a href="https://www.tripadvisor.com/Restaurant_Review-g551559-d23295632-Reviews-Gaelic_Burger_Coffee-Naas_County_Kildare.html" target="_blank" rel="noopener">Tripadvisor</a>
   </nav>
-  <p>Gaelic Burger &middot; Naas, Co. Kildare &middot; <a href="tel:+35345916090">+353 45 916 090</a></p>
+  <p>Gaelic Burger &middot; Newhall, Naas, Co. Kildare, W91 VK8P &middot; <a href="tel:+35345916090">+353 45 916 090</a></p>
   <p class="small">&copy; 2026 Gaelic Burger. 100% Irish Owned.</p>
 </footer>
 </body>
