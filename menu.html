@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Menu | Gaelic Burger, Naas</title>
-<meta name="description" content="Gourmet burgers, cheese steak, breakfast baps, fresh-cut chips, loaded fries and coffee at Gaelic Burger, Newhall, Naas. Order online for delivery.">
+<title>Menu | Gourmet Burgers, Chips &amp; Breakfast | Gaelic Burger, Naas</title>
+<meta name="description" content="Gourmet burgers, bacon burgers, cheese steak, fresh-cut chips, curry cheese chips, loaded fries, breakfast baps and coffee at Gaelic Burger, Newhall, Naas.">
 <link rel="canonical" href="https://gaelic-burger.vercel.app/menu">
-<meta name="theme-color" content="#123d2b">
+<meta name="theme-color" content="#0b4a28">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Gaelic Burger">
-<meta property="og:title" content="Menu | Gaelic Burger, Naas">
-<meta property="og:description" content="Gourmet burgers, cheese steak, breakfast baps, fresh-cut chips, loaded fries and coffee at Gaelic Burger, Newhall, Naas. Order online for delivery.">
+<meta property="og:title" content="Menu | Gourmet Burgers, Chips &amp; Breakfast | Gaelic Burger, Naas">
+<meta property="og:description" content="Gourmet burgers, bacon burgers, cheese steak, fresh-cut chips, curry cheese chips, loaded fries, breakfast baps and coffee at Gaelic Burger, Newhall, Naas.">
 <meta property="og:url" content="https://gaelic-burger.vercel.app/menu">
 <meta property="og:image" content="https://gaelic-burger.vercel.app/images/og-image.jpg">
 <meta property="og:locale" content="en_IE">
@@ -20,8 +20,8 @@
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Caveat+Brush&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -45,122 +45,177 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" class="defs" aria-hidden="true">
+  <defs>
+    <path id="leaf" d="M0 0C-7-7-19-15-19-27C-19-35-13-40-7.5-40C-3.5-40 0-37 0-33C0-37 3.5-40 7.5-40C13-40 19-35 19-27C19-15 7-7 0 0Z"/>
+    <symbol id="shamrock" viewBox="-44 -44 88 88"><use href="#leaf"/><use href="#leaf" transform="rotate(120)"/><use href="#leaf" transform="rotate(240)"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+    <symbol id="bag" viewBox="0 0 24 24"><path d="M7 7V6a5 5 0 0 1 10 0v1h3l-1 14H5L4 7zm2 0h6V6a3 3 0 0 0-6 0z"/></symbol>
+    <symbol id="info" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-6h2zm0-8h-2V7h2z"/></symbol>
+  </defs>
+</svg>
 
-<div class="topbar">
-  <span>☘ 100% Irish Owned<span class="tb-extra"> &middot; Naas, Co. Kildare</span></span>
-  <a href="tel:+35345916090">+353 45 916 090</a>
+<div class="top wrap">
+  <span class="glow glow-a" aria-hidden="true"></span>
+  <span class="glow glow-b" aria-hidden="true"></span>
+  <header class="topbar">
+    <a href="/" class="brand" aria-label="Gaelic Burger home">
+      <img src="/images/logo.webp" alt="" width="48" height="48">
+      <span>Gaelic<b>Burger</b></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/menu" aria-current="page">Menu</a>
+      <a href="/about">Our Story</a>
+      <a href="/events">Events</a>
+      <a href="/contact">Visit Us</a>
+    </nav>
+    <div class="topbar-right">
+      <a class="icon-btn" href="tel:+35345916090" aria-label="Call +353 45 916 090"><svg><use href="#phone"/></svg></a>
+      <a class="pill pill-white" href="https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas" target="_blank" rel="noopener">Order Online</a>
+      <details class="mnav">
+        <summary aria-label="Open menu"><span></span><span></span><span></span></summary>
+        <nav aria-label="Mobile">
+          <a href="/">Home</a>
+          <a href="/menu" aria-current="page">Menu</a>
+          <a href="/about">Our Story</a>
+          <a href="/events">Events</a>
+          <a href="/contact">Visit Us</a>
+          <a href="tel:+35345916090">Call +353 45 916 090</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+  <section class="page-hero">
+    <div class="hero-copy">
+      <p class="crumb-trail"><a href="/">Home</a><span aria-hidden="true">/</span><span>Menu</span></p>
+      <p class="kicker">What's cooking</p>
+      <h1>Our <em>Menu</em></h1>
+      <p class="lede">Award-winning burgers, fresh-cut chips and a proper breakfast, all cooked to order. See live prices and order on Deliveroo.</p>
+      <div class="cta">
+        <a class="pill pill-leaf" href="https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas" target="_blank" rel="noopener">Order Online</a>
+        <a class="call" href="tel:+35345916090"><span class="call-dot"><svg aria-hidden="true"><use href="#phone"/></svg></span>+353 45 916 090</a>
+      </div>
+    </div>
+    <div class="ph-art">
+      <img class="capsule" src="/images/burger.webp" alt="Gaelic Burger bacon cheeseburger" width="300" height="320">
+      <span class="crumbs" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <div class="stamp" role="img" aria-label="Best Burger in Leinster 2021"><span><small>Best in</small><b>Leinster</b><small>2021</small></span></div>
+    </div>
+  </section>
 </div>
-<div class="tricolour" aria-hidden="true"><i></i><i></i><i></i></div>
-
-<header class="header">
-  <a href="/" class="logo" aria-label="Gaelic Burger home">
-    <img src="/images/logo.webp" alt="Gaelic Burger" width="64" height="60">
-  </a>
-  <nav aria-label="Main">
-    <a href="/menu" aria-current="page">Menu</a>
-    <a href="/about">Our Story</a>
-    <a href="/events">Events</a>
-    <a href="/contact">Find Us</a>
-  </nav>
-  <div class="header-actions">
-    <a class="btn btn-sm" href="https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas" target="_blank" rel="noopener">Order Online</a>
-    <details class="mnav">
-      <summary aria-label="Open menu"><span></span><span></span><span></span></summary>
-      <nav aria-label="Mobile">
-        <a href="/">Home</a>
-        <a href="/menu" aria-current="page">Menu</a>
-        <a href="/about">Our Story</a>
-        <a href="/events">Events &amp; Catering</a>
-        <a href="/contact">Find Us</a>
-        <a class="mnav-call" href="tel:+35345916090">Call +353 45 916 090</a>
-      </nav>
-    </details>
-  </div>
-</header>
 
 <main id="main">
-  <section class="page-hero">
-    <img class="float f1" src="/images/shamrock.svg" alt="" width="70" height="70">
-    <img class="float f2" src="/images/shamrock-outline.svg" alt="" width="44" height="44">
-    <p class="scribble scribble-light">What's cooking</p>
-    <h1>The <span class="hl">Menu</span></h1>
-    <p class="lead">Everything is cooked to order. Order online for delivery, or call ahead and we'll have it ready.</p>
-  </section>
-  <div class="menu-wrap">
-    <section class="menu-section" aria-labelledby="m-breakfast">
-      <h2 id="m-breakfast">Breakfast</h2>
-      <p class="menu-note">From 9am (10:30am Sundays)</p>
-      <ul class="food-list menu-list">
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Breakfast Bap <span class="tag">Special</span></h3><p>Sausage, crispy bacon and a fried egg in a soft bap. Great days start here.</p></div><span class="price">€5.00</span></li>
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Breakfast Roll</h3><p>Sausage, bacon, egg and pudding in a crusty roll.</p></div><span class="price">€6.50</span></li>
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Bacon &amp; Cheese Toastie</h3><p>Crispy bacon and melted Irish cheddar, toasted.</p></div><span class="price">€5.50</span></li>
-      </ul>
-    </section>
-    <section class="menu-section" aria-labelledby="m-burgers">
-      <h2 id="m-burgers">Burgers &amp; Subs</h2>
-      <p class="menu-note">All burgers served on a toasted brioche bun</p>
-      <ul class="food-list menu-list">
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>The Gaelic Classic <span class="tag">Award winner</span></h3><p>Irish beef patty, cheddar, lettuce, tomato, pickles and house sauce.</p></div><span class="price">€11.50</span></li>
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Bacon Burger</h3><p>Loaded with crispy bacon and melted cheese. A regular favourite.</p></div><span class="price">€12.95</span></li>
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Double Smash</h3><p>Two smashed patties, double cheese, onions and burger sauce.</p></div><span class="price">€14.50</span></li>
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Crispy Chicken Burger</h3><p>Buttermilk fried chicken, slaw, pickles and garlic mayo.</p></div><span class="price">€11.95</span></li>
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Veggie Burger</h3><p>Spiced veggie patty, cheddar, lettuce, tomato and relish.</p></div><span class="price">€10.95</span></li>
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Cheese Steak</h3><p>Our steak sub, stacked high and dripping with cheese.</p></div><span class="price">€13.50</span></li>
-      </ul>
-    </section>
-    <section class="menu-section" aria-labelledby="m-chips">
-      <h2 id="m-chips">Chips &amp; Sides</h2>
-      <p class="menu-note">Our chips are cut fresh every day</p>
-      <ul class="food-list menu-list">
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Fresh Cut Chips</h3><p>Homemade, cut fresh and cooked crisp. Generous portions.</p></div><span class="price">€4.00</span></li>
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Garlic Chips</h3><p>Fresh-cut chips with garlic sauce.</p></div><span class="price">€5.00</span></li>
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Curry Cheese Chips</h3><p>Fresh-cut chips with curry sauce and melted cheese.</p></div><span class="price">€6.00</span></li>
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Loaded Fries</h3><p>Fresh-cut chips with cheese, bacon bits, scallions and house sauce.</p></div><span class="price">€8.50</span></li>
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Onion Rings</h3><p>Golden, crunchy and made for dipping.</p></div><span class="price">€4.50</span></li>
-      </ul>
-    </section>
-    <section class="menu-section" aria-labelledby="m-drinks">
-      <h2 id="m-drinks">Drinks</h2>
-      
-      <ul class="food-list menu-list">
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Coffee</h3><p>Americano, latte or cappuccino.</p></div><span class="price">€3.50</span></li>
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Tea</h3><p>A proper cup of Irish tea.</p></div><span class="price">€2.50</span></li>
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Soft Drinks</h3><p>Cans and bottles.</p></div><span class="price">€2.50</span></li>
-        <li><img src="/images/shamrock.svg" alt="" width="30" height="30"><div><h3>Milkshake</h3><p>Chocolate, strawberry or vanilla.</p></div><span class="price">€5.50</span></li>
-      </ul>
-    </section>
-    <p class="menu-note">Please tell us about any allergies before ordering. <a href="/allergens">Allergen info</a></p>
-    <aside class="order-card">
-      <h2>Hungry now?</h2>
-      <p>Order online for delivery, or give us a call.</p>
-      <div class="actions">
-        <a class="btn" href="https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas" target="_blank" rel="noopener">Order Online</a>
-        <a class="btn btn-ghost-dark" href="tel:+35345916090">Call +353 45 916 090</a>
+  <div class="wrap section section-tight">
+    <nav class="menu-nav" aria-label="Menu sections">
+      <a href="#burgers">Burgers &amp; Subs</a>
+      <a href="#chips">Chips &amp; Sides</a>
+      <a href="#breakfast">Breakfast</a>
+      <a href="#drinks">Coffee &amp; Drinks</a>
+    </nav>
+    <section class="menu-cat" id="burgers" aria-labelledby="burgers-h">
+      <div class="cat-head">
+        <div><h2 id="burgers-h">Burgers &amp; Subs</h2><p>Cooked to order and served hot off the grill.</p></div>
+        <img src="/images/burger.webp" alt="Gaelic Burger bacon cheeseburger" width="300" height="320" loading="lazy">
       </div>
-    </aside>
+      <ul class="items">
+        <li class="item"><span class="ico"><svg aria-hidden="true"><use href="#shamrock"/></svg></span><div><h3>Gourmet Burgers <span class="tag">Award winner</span></h3><p>Our award-winning burgers, stacked high on a soft brioche bun.</p></div></li>
+        <li class="item"><span class="ico"><svg aria-hidden="true"><use href="#shamrock"/></svg></span><div><h3>Bacon Burger</h3><p>Crispy bacon and melted cheese. A regulars' favourite.</p></div></li>
+        <li class="item"><span class="ico"><svg aria-hidden="true"><use href="#shamrock"/></svg></span><div><h3>Cheese Steak</h3><p>Our steak sub, loaded and melting with cheese.</p></div></li>
+      </ul>
+    </section>
+    <section class="menu-cat" id="chips" aria-labelledby="chips-h">
+      <div class="cat-head">
+        <div><h2 id="chips-h">Chips &amp; Sides</h2><p>Homemade, fresh-cut chips.</p></div>
+        <img src="/images/fries.webp" alt="Loaded chips with cheese and curry sauce" width="400" height="600" loading="lazy">
+      </div>
+      <ul class="items">
+        <li class="item"><span class="ico"><svg aria-hidden="true"><use href="#shamrock"/></svg></span><div><h3>Fresh-Cut Chips</h3><p>Homemade chips, cut fresh and cooked crisp.</p></div></li>
+        <li class="item"><span class="ico"><svg aria-hidden="true"><use href="#shamrock"/></svg></span><div><h3>Garlic Chips</h3><p>Fresh-cut chips with garlic sauce.</p></div></li>
+        <li class="item"><span class="ico"><svg aria-hidden="true"><use href="#shamrock"/></svg></span><div><h3>Curry Cheese Chips</h3><p>Fresh-cut chips with curry sauce and melted cheese.</p></div></li>
+        <li class="item"><span class="ico"><svg aria-hidden="true"><use href="#shamrock"/></svg></span><div><h3>Loaded Fries</h3><p>Fresh-cut chips piled high with toppings.</p></div></li>
+      </ul>
+    </section>
+    <section class="menu-cat" id="breakfast" aria-labelledby="breakfast-h">
+      <div class="cat-head">
+        <div><h2 id="breakfast-h">Breakfast</h2><p>From 9am Monday to Saturday, and from 10:30am on Sunday.</p></div>
+      </div>
+      <ul class="items">
+        <li class="item"><span class="ico"><svg aria-hidden="true"><use href="#shamrock"/></svg></span><div><h3>Breakfast Bap</h3><p>A proper breakfast in a soft bap. The best way to start the day.</p></div></li>
+      </ul>
+    </section>
+    <section class="menu-cat" id="drinks" aria-labelledby="drinks-h">
+      <div class="cat-head">
+        <div><h2 id="drinks-h">Coffee &amp; Drinks</h2><p>Something to wash it all down.</p></div>
+      </div>
+      <ul class="items">
+        <li class="item"><span class="ico"><svg aria-hidden="true"><use href="#shamrock"/></svg></span><div><h3>Coffee</h3><p>Freshly made, to start the day or finish the meal.</p></div></li>
+        <li class="item"><span class="ico"><svg aria-hidden="true"><use href="#shamrock"/></svg></span><div><h3>Soft Drinks</h3><p>Cold cans and bottles.</p></div></li>
+      </ul>
+    </section>
+    <p class="note"><svg aria-hidden="true"><use href="#info"/></svg><span>Prices and the full range are on <a href="https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas" target="_blank" rel="noopener">Deliveroo</a>. Got an allergy? Please tell us before you order. <a href="/allergens">Allergen info</a></span></p>
   </div>
+
+<section class="wrap" aria-label="Order">
+    <div class="order-band">
+      <svg aria-hidden="true"><use href="#shamrock"/></svg>
+      <div>
+        <h2>Hungry? <em>Sorted.</em></h2>
+        <p>Order online for delivery, or call us on +353 45 916 090.</p>
+      </div>
+      <div class="cta">
+        <a class="pill pill-leaf" href="https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas" target="_blank" rel="noopener">Order Online</a>
+        <a class="call call-light" href="tel:+35345916090"><span class="call-dot"><svg aria-hidden="true"><use href="#phone"/></svg></span>Call us</a>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer class="footer">
-  <div class="tricolour" aria-hidden="true"><i></i><i></i><i></i></div>
-  <img class="footer-logo" src="/images/logo.webp" alt="" width="84" height="79" loading="lazy">
-  <p class="scribble scribble-light">Go raibh maith agat!</p>
-  <nav aria-label="Footer">
-    <a href="/menu">Menu</a>
-    <a href="/about">Our Story</a>
-    <a href="/events">Events &amp; Catering</a>
-    <a href="/contact">Find Us</a>
-    <a href="/allergens">Allergens</a>
-    <a href="/privacy">Privacy</a>
-  </nav>
-  <nav aria-label="Social">
-    <a href="https://www.instagram.com/gaelicburger" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://www.facebook.com/Gaelicburger/" target="_blank" rel="noopener">Facebook</a>
-    <a href="https://www.linkedin.com/company/gaelic-burger" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="https://www.tripadvisor.com/Restaurant_Review-g551559-d23295632-Reviews-Gaelic_Burger_Coffee-Naas_County_Kildare.html" target="_blank" rel="noopener">Tripadvisor</a>
-  </nav>
-  <p>Gaelic Burger &middot; Newhall, Naas, Co. Kildare, W91 VK8P &middot; <a href="tel:+35345916090">+353 45 916 090</a></p>
-  <p class="small">&copy; 2026 Gaelic Burger. 100% Irish Owned.</p>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="/" class="brand" aria-label="Gaelic Burger home">
+          <img src="/images/logo.webp" alt="" width="44" height="44" loading="lazy">
+          <span>Gaelic<b>Burger</b></span>
+        </a>
+        <p>100% Irish owned gourmet burgers in Newhall, Naas. Best Burger in Leinster 2021 and Best Gourmet Burger Specialist 2022.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="/menu">Menu</a></li>
+          <li><a href="/about">Our Story</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/contact">Visit Us</a></li>
+          <li><a href="https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas" target="_blank" rel="noopener">Order Online</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <address>Newhall, Naas<br>Co. Kildare, W91 VK8P<br><a href="tel:+35345916090">+353 45 916 090</a></address>
+        <ul class="foot-hours">
+          <li>Mon – Thu: 9am – 6:30pm</li>
+          <li>Fri – Sat: 9am – 8:30pm</li>
+          <li>Sun: 10:30am – 7pm</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Follow</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/gaelicburger" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/Gaelicburger/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/company/gaelic-burger" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.tripadvisor.com/Restaurant_Review-g551559-d23295632-Reviews-Gaelic_Burger_Coffee-Naas_County_Kildare.html" target="_blank" rel="noopener">Tripadvisor</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>&copy; 2026 Gaelic Burger &middot; 100% Irish Owned</p>
+      <nav aria-label="Legal"><a href="/allergens">Allergens</a><a href="/privacy">Privacy</a></nav>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
