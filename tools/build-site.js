@@ -76,7 +76,7 @@ ${NAV.map(([href, label]) => `      <a href="${href}"${href === current ? ' aria
     </nav>
     <div class="topbar-right">
       <a class="icon-btn" href="${TEL}" aria-label="Call ${PHONE}"><svg><use href="#phone"/></svg></a>
-      <a class="pill pill-white" href="${ORDER}" ${ext}>Order Online</a>
+      <a class="pill pill-leaf" href="${ORDER}" ${ext}>Order Online</a>
       <details class="mnav">
         <summary aria-label="Open menu"><span></span><span></span><span></span></summary>
         <nav aria-label="Mobile">

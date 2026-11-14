@@ -60,6 +60,9 @@ h1 em,h2 em{font-style:normal;color:var(--leaf)}
 .topbar-right{display:flex;align-items:center;gap:12px}
 .icon-btn{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#fff;box-shadow:0 8px 20px -10px rgba(11,74,40,.4)}
 .icon-btn svg{width:18px;height:18px;fill:var(--bottle)}
+.icon-btn{background:var(--leaf);box-shadow:0 12px 24px -12px rgba(79,157,51,.9)}
+.icon-btn svg{fill:#fff}
+.icon-btn:hover{background:var(--leaf-d)}
 .topbar .pill{padding:11px 26px;font-size:.92rem}
 .mnav{display:none;position:relative}
 .mnav summary{list-style:none;cursor:pointer;width:46px;height:46px;border-radius:50%;background:var(--bottle);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
