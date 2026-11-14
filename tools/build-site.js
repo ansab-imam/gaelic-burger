@@ -198,7 +198,7 @@ const pic = (name, alt, w, h, cls = '', lazy = true) => `<picture>
         <img${cls ? ` class="${cls}"` : ''} src="/images/${name}.jpg" alt="${alt}" width="${w}" height="${h}"${lazy ? ' loading="lazy"' : ''}>
       </picture>`;
 const crumbs3 = '<span class="crumbs" aria-hidden="true"><i></i><i></i><i></i><i></i></span>';
-const stamp = `<div class="stamp" role="img" aria-label="Best Burger in Leinster 2021"><span><small>Best in</small><b>Leinster</b><small>2021</small></span></div>`;
+const stamp = `<div class="stamp" role="img" aria-label="Ireland's Best Burger"><span><small>Best in</small><b>Ireland</b><small>Burger</small></span></div>`;
 const pageHero = ({ name, kicker, h1, lede, art, cta }) => `  <section class="page-hero">
     <div class="hero-copy">
       <p class="crumb-trail"><a href="/">Home</a><span aria-hidden="true">/</span><span>${name}</span></p>
