@@ -13,6 +13,7 @@ const PHONE = '+353 45 916 090';
 const TEL = 'tel:+35345916090';
 const SOCIAL = {
   Instagram: 'https://www.instagram.com/gaelicburger',
+  TikTok: 'https://www.tiktok.com/@gaelicburger',
   Facebook: 'https://www.facebook.com/Gaelicburger/',
   LinkedIn: 'https://www.linkedin.com/company/gaelic-burger',
   Tripadvisor: 'https://www.tripadvisor.com/Restaurant_Review-g551559-d23295632-Reviews-Gaelic_Burger_Coffee-Naas_County_Kildare.html',
@@ -255,14 +256,14 @@ const menuCats = [
     ['Bacon Burger', 'Crispy bacon and melted cheese. A regulars\' favourite.'],
     ['Cheese Steak', 'Our steak sub, loaded and melting with cheese.'],
   ] },
-  { id: 'chips', title: 'Chips &amp; Sides', note: 'Homemade, fresh-cut chips.', img: ['fries', 'Loaded chips with cheese and curry sauce', 400, 600], items: [
-    ['Fresh-Cut Chips', 'Homemade chips, cut fresh and cooked crisp.'],
+  { id: 'chips', title: 'Chips &amp; Sides', note: 'Cut fresh to order from Irish grown potatoes.', img: ['fries', 'Loaded chips with cheese and curry sauce', 400, 600], items: [
+    ['Fresh-Cut Chips', 'Cut fresh to order from Irish grown potatoes and cooked crisp.'],
     ['Garlic Chips', 'Fresh-cut chips with garlic sauce.'],
     ['Curry Cheese Chips', 'Fresh-cut chips with curry sauce and melted cheese.'],
     ['Loaded Fries', 'Fresh-cut chips piled high with toppings.'],
   ] },
-  { id: 'breakfast', title: 'Breakfast', note: 'From 9am Monday to Saturday, and from 10:30am on Sunday.', items: [
-    ['Breakfast Bap', 'A proper breakfast in a soft bap. The best way to start the day.'],
+  { id: 'breakfast', title: 'Breakfast', note: 'Served all day, 7 days a week.', items: [
+    ['Breakfast Bap', 'A proper breakfast in a soft bap, served all day, 7 days a week.'],
   ] },
   { id: 'drinks', title: 'Coffee &amp; Drinks', note: 'Something to wash it all down.', items: [
     ['Coffee', 'Freshly made, to start the day or finish the meal.'],
@@ -290,7 +291,7 @@ const pages = [
     top: `  <section class="hero">
     <div class="hero-copy">
       <p class="kicker">Farm to fork &middot; Naas, Co. Kildare</p>
-      <h1>Leinster's Best Burger is <em>Right Here!</em></h1>
+      <h1>Ireland's Best Burger is <em>Right Here!</em></h1>
       <p class="lede">100% Irish owned and cooked to order in Newhall. Gourmet burgers, fresh-cut chips and coffee, open seven days a week.</p>
       <div class="cta">
         <a class="pill pill-leaf" href="${ORDER}" ${ext}>Order Now</a>
@@ -336,7 +337,7 @@ ${[1, 2].map(() => ['Best Burger in Leinster 2021', 'Best Gourmet Burger Special
       <li>${sham}<h3>Cheese Steak</h3><p>Loaded, melting and best eaten hot.</p></li>
       <li>${sham}<h3>Loaded Fries</h3><p>Fresh-cut and piled with toppings.</p></li>
       <li>${sham}<h3>Curry Cheese Chips</h3><p>Homemade chips, cheese and curry sauce.</p></li>
-      <li>${sham}<h3>Breakfast Bap</h3><p>Start the day right, with a hot coffee.</p></li>
+      <li>${sham}<h3>Breakfast Bap</h3><p>Served all day, 7 days a week. Great with a hot coffee.</p></li>
     </ol>
     <a class="pill pill-bottle" href="/menu">See the full menu</a>
   </section>
@@ -428,7 +429,7 @@ ${orderBand}`,
         <p class="kicker">Who we are</p>
         <h2 id="who-h">100% Irish owned. <em>Farm to fork.</em></h2>
         <p>Gaelic Burger is Irish owned from top to bottom. We keep things farm to fork: good ingredients, cooked to order and served hot.</p>
-        <p>You'll find us in Newhall, just outside Naas, with outdoor seating and a proper welcome. We're open from 9am for breakfast baps and coffee, then keep the grill going for burgers, cheese steak and fresh-cut chips into the evening.</p>
+        <p>You'll find us in Newhall, just outside Naas, with outdoor seating and a proper welcome. Our breakfast bap is served all day, 7 days a week, alongside burgers, cheese steak and chips cut fresh to order from Irish grown potatoes.</p>
       </div>
     </div>
   </section>
@@ -442,7 +443,7 @@ ${orderBand}`,
     <ul class="grid3">
       <li class="card">${sham}<h3>Gourmet Burgers</h3><p>Burgers built properly, cooked to order and served hot.</p></li>
       <li class="card">${sham}<h3>Passion</h3><p>We love what we do, and we think you can taste it.</p></li>
-      <li class="card">${sham}<h3>Quality</h3><p>Good ingredients, fresh-cut chips and no shortcuts.</p></li>
+      <li class="card">${sham}<h3>Quality</h3><p>Good ingredients, chips cut fresh to order from Irish grown potatoes, and no shortcuts.</p></li>
     </ul>
   </section>
 
@@ -475,7 +476,7 @@ ${orderBand}`,
   {
     slug: 'events',
     title: 'Events | Find the Gaelic Burger Truck | Naas, Co. Kildare',
-    desc: 'The Gaelic Burger truck pops up at events. Follow us on Facebook and Instagram to see where we\'ll be next, or call us about your event.',
+    desc: 'The Gaelic Burger truck pops up at events. Follow us on Facebook, Instagram and TikTok to see where we\'ll be next, or call or email us to book the truck.',
     schema: crumbs('Events', 'events'),
     top: pageHero({
       name: 'Events',
@@ -496,14 +497,15 @@ ${orderBand}`,
       <div class="split-copy">
         <p class="kicker">Where we'll be</p>
         <h2 id="where-h">Follow us to <em>find us.</em></h2>
-        <p>Follow Gaelic Burger on Facebook and Instagram for our latest news, specials and where to find the truck.</p>
+        <p>Follow Gaelic Burger on Facebook, Instagram and TikTok for our latest news, specials and where to find the truck.</p>
         <ul class="ticks">
           <li>The same award-winning burgers, cooked fresh on the spot</li>
-                    <li>Latest news on Facebook and Instagram</li>
+          <li>Latest news on Facebook, Instagram and TikTok</li>
         </ul>
         <div class="cta">
           <a class="pill pill-bottle" href="${SOCIAL.Instagram}" ${ext}>Instagram</a>
           <a class="pill pill-line" href="${SOCIAL.Facebook}" ${ext}>Facebook</a>
+          <a class="pill pill-line" href="${SOCIAL.TikTok}" ${ext}>TikTok</a>
         </div>
       </div>
     </div>
@@ -513,10 +515,11 @@ ${orderBand}`,
     <div class="head">
       <p class="kicker">Planning something?</p>
       <h2 id="plan-h">Thinking of us for <em>your event?</em></h2>
-      <p>Give us a call with your date, location and rough numbers, and we'll let you know if the truck is free.</p>
+      <p>Call or email us with your date, location and rough numbers, and we'll let you know if the truck is free.</p>
     </div>
     <div class="cta">
       <a class="pill pill-leaf" href="${TEL}">Call ${PHONE}</a>
+      <a class="pill pill-line" href="mailto:${EMAIL}?subject=Food%20truck%20booking">Email ${EMAIL}</a>
     </div>
   </section>
 
@@ -570,7 +573,7 @@ ${orderBand}`,
         <ul class="ticks">
           <li>Outdoor seating</li>
           <li>Wheelchair accessible entrance, parking, seating and toilet</li>
-          <li>Breakfast from 9am (10:30am on Sunday)</li>
+          <li>Breakfast bap served all day, 7 days a week</li>
         </ul>
       </div>
     </div>
@@ -630,7 +633,7 @@ ${orderBand}`,
         <li><strong>Google Fonts</strong> loads the fonts on this site. Google may receive your IP address when the fonts load.</li>
         <li><strong>Google Maps</strong> is embedded on our Visit Us page and may set its own cookies when it loads.</li>
         <li><strong>Online ordering</strong> happens on Just Eat, which has its own privacy policy.</li>
-        <li><strong>Social links</strong> take you to Facebook, Instagram, LinkedIn and Tripadvisor, each with its own policy.</li>
+        <li><strong>Social links</strong> take you to Facebook, Instagram, TikTok, LinkedIn and Tripadvisor, each with its own policy.</li>
       </ul>
       <h2>Hosting</h2>
       <p>This site is hosted by Vercel, which keeps basic server logs (such as IP addresses) for security and performance.</p>
