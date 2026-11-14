@@ -362,6 +362,25 @@ ${[1, 2].map(() => ['Best Burger in Leinster 2021', 'Best Gourmet Burger Special
     </div>
   </section>
 
+  <section class="wrap section section-tight" aria-labelledby="fresh-h">
+    <div class="split flip">
+      <div class="split-art video">
+        <iframe src="https://www.tiktok.com/player/v1/7592948758321663254?music_info=1&amp;description=1&amp;muted=1" title="Gaelic Burger set-up video on TikTok" allow="encrypted-media; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="split-copy">
+        <p class="kicker">See our set-up</p>
+        <h2 id="fresh-h">Chips cut fresh <em>to order.</em></h2>
+        <p>Our chips are cut fresh to order from Irish grown potatoes. Here's a look at our set-up in Newhall.</p>
+        <ul class="ticks">
+          <li>Cut fresh to order, every time</li>
+          <li>Irish grown potatoes</li>
+          <li>Come visit Paddy the Leprechaun</li>
+        </ul>
+        <div class="cta"><a class="pill pill-leaf" href="https://www.tiktok.com/@gaelicburger/video/7592948758321663254" ${ext}>Watch on TikTok</a></div>
+      </div>
+    </div>
+  </section>
+
   <section class="wrap section section-tight center" aria-labelledby="how-h">
     <div class="head">
       <p class="kicker">Three ways to get your fix</p>
@@ -369,7 +388,7 @@ ${[1, 2].map(() => ['Best Burger in Leinster 2021', 'Best Gourmet Burger Special
     </div>
     <ol class="grid3">
       <li class="card step"><span class="num" aria-hidden="true">01</span><span class="ico"><svg aria-hidden="true"><use href="#bag"/></svg></span><h3>Order online</h3><p>Get it delivered to your door through Just Eat.</p><a href="${ORDER}" ${ext}>Order on Just Eat →</a></li>
-      <li class="card step"><span class="num" aria-hidden="true">02</span><span class="ico"><svg aria-hidden="true"><use href="#pin"/></svg></span><h3>Visit us</h3><p>Grab a seat outside at Newhall, Naas. Open seven days a week.</p><a href="/contact">Hours &amp; directions →</a></li>
+      <li class="card step"><span class="num" aria-hidden="true">02</span><span class="ico"><svg aria-hidden="true"><use href="#pin"/></svg></span><h3>Visit us</h3><p>Grab a seat outside at Newhall, Naas, and come visit Paddy the Leprechaun. Open seven days a week.</p><a href="/contact">Hours &amp; directions →</a></li>
       <li class="card step"><span class="num" aria-hidden="true">03</span><span class="ico"><svg aria-hidden="true"><use href="#phone"/></svg></span><h3>Give us a call</h3><p>Questions, allergies or anything else, we're happy to help.</p><a href="${TEL}">${PHONE} →</a></li>
     </ol>
   </section>
@@ -574,6 +593,7 @@ ${orderBand}`,
           <li>Outdoor seating</li>
           <li>Wheelchair accessible entrance, parking, seating and toilet</li>
           <li>Breakfast bap served all day, 7 days a week</li>
+          <li>Come visit Paddy the Leprechaun</li>
         </ul>
       </div>
     </div>

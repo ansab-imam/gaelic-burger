@@ -355,3 +355,5 @@ h1,h2{text-wrap:balance}
   .dishes .ico{grid-row:span 2;margin:0;width:50px;height:50px}
   .dishes h3{font-size:1.1rem;margin:0}
 }
+.split-art.video{width:min(340px,100%)}
+.split-art.video iframe{display:block;width:100%;aspect-ratio:325/578;border:0;border-radius:32px;background:var(--bottle);box-shadow:0 40px 60px -36px rgba(7,40,20,.6)}
