@@ -561,7 +561,7 @@ ${orderBand}`,
         <h2>Get in touch</h2>
         <address><strong>Gaelic Burger</strong><br>Newhall, Naas<br>Co. Kildare, W91 VK8P</address>
         <a class="big-phone" href="${TEL}">${PHONE}</a>
-        <p><a href="mailto:${EMAIL}">${EMAIL}</a></p>
+        <a class="big-mail" href="mailto:${EMAIL}">${EMAIL}</a>
         <div class="cta">
           <a class="pill pill-leaf" href="${MAPS}" ${ext}>Directions</a>
           <a class="pill pill-line" href="${ORDER}" ${ext}>Order Online</a>
