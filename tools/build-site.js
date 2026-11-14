@@ -109,7 +109,7 @@ const footer = `<footer class="foot">
           <img src="/images/logo.webp" alt="" width="44" height="44" loading="lazy">
           <span>Gaelic<b>Burger</b></span>
         </a>
-        <p>100% Irish owned gourmet burgers in Newhall, Naas. Best Burger in Leinster 2021 and Best Gourmet Burger Specialist 2022.</p>
+        <p>100% Irish owned gourmet burgers in Newhall, Naas. Best Burger in Ireland 2021 and Best Gourmet Burger Specialist 2022.</p>
       </div>
       <div>
         <h2>Explore</h2>
@@ -285,7 +285,7 @@ const pages = [
   {
     slug: '',
     title: 'Gaelic Burger | Award-Winning Gourmet Burgers in Naas, Co. Kildare',
-    desc: `100% Irish owned gourmet burgers in Newhall, Naas. Best Burger in Leinster 2021 and Best Gourmet Burger Specialist 2022. Order online or call ${PHONE}.`,
+    desc: `100% Irish owned gourmet burgers in Newhall, Naas. Best Burger in Ireland 2021 and Best Gourmet Burger Specialist 2022. Order online or call ${PHONE}.`,
     schema: restaurant,
     preload: '/images/burger-stack.webp',
     top: `  <section class="hero">
