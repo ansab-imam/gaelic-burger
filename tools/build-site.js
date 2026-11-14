@@ -6,7 +6,8 @@ const path = require('path');
 const root = path.join(__dirname, '..');
 
 const BASE = 'https://gaelic-burger.vercel.app';
-const DELIVEROO = 'https://deliveroo.ie/menu/naas/naas/gaelic-burger-naas';
+const ORDER = 'https://www.just-eat.ie/restaurants-gaelic-burger-kildare/menu';
+const EMAIL = 'info@gaelicburger.ie';
 const MAPS = 'https://maps.app.goo.gl/uh41q87rJhTMWopP6';
 const PHONE = '+353 45 916 090';
 const TEL = 'tel:+35345916090';
@@ -47,11 +48,12 @@ const restaurant = {
     { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Friday', 'Saturday'], opens: '09:00', closes: '20:30' },
     { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Sunday', opens: '10:30', closes: '19:00' },
   ],
+  email: EMAIL,
   hasMenu: BASE + '/menu',
   hasMap: MAPS,
   award: ['Best Burger in Leinster 2021', 'Best Gourmet Burger Specialist 2022'],
   aggregateRating: { '@type': 'AggregateRating', ratingValue: 4.7, reviewCount: 454 },
-  potentialAction: { '@type': 'OrderAction', target: DELIVEROO },
+  potentialAction: { '@type': 'OrderAction', target: ORDER },
   sameAs: Object.values(SOCIAL),
 };
 const crumbs = (name, slug) => ({
@@ -73,7 +75,7 @@ ${NAV.map(([href, label]) => `      <a href="${href}"${href === current ? ' aria
     </nav>
     <div class="topbar-right">
       <a class="icon-btn" href="${TEL}" aria-label="Call ${PHONE}"><svg><use href="#phone"/></svg></a>
-      <a class="pill pill-white" href="${DELIVEROO}" ${ext}>Order Online</a>
+      <a class="pill pill-white" href="${ORDER}" ${ext}>Order Online</a>
       <details class="mnav">
         <summary aria-label="Open menu"><span></span><span></span><span></span></summary>
         <nav aria-label="Mobile">
@@ -92,7 +94,7 @@ const orderBand = `<section class="wrap" aria-label="Order">
         <p>Order online for delivery, or call us on ${PHONE}.</p>
       </div>
       <div class="cta">
-        <a class="pill pill-leaf" href="${DELIVEROO}" ${ext}>Order Online</a>
+        <a class="pill pill-leaf" href="${ORDER}" ${ext}>Order Online</a>
         <a class="call call-light" href="${TEL}"><span class="call-dot"><svg aria-hidden="true"><use href="#phone"/></svg></span>Call us</a>
       </div>
     </div>
@@ -112,12 +114,12 @@ const footer = `<footer class="foot">
         <h2>Explore</h2>
         <ul>
 ${NAV.slice(1).map(([href, label]) => `          <li><a href="${href}">${label}</a></li>`).join('\n')}
-          <li><a href="${DELIVEROO}" ${ext}>Order Online</a></li>
+          <li><a href="${ORDER}" ${ext}>Order Online</a></li>
         </ul>
       </div>
       <div>
         <h2>Visit</h2>
-        <address>Newhall, Naas<br>Co. Kildare, W91 VK8P<br><a href="${TEL}">${PHONE}</a></address>
+        <address>Newhall, Naas<br>Co. Kildare, W91 VK8P<br><a href="${TEL}">${PHONE}</a><br><a href="mailto:${EMAIL}">${EMAIL}</a></address>
         <ul class="foot-hours">
           <li>Mon – Thu: 9am – 6:30pm</li>
           <li>Fri – Sat: 9am – 8:30pm</li>
@@ -203,7 +205,7 @@ const pageHero = ({ name, kicker, h1, lede, art, cta }) => `  <section class="pa
       <h1>${h1}</h1>
       <p class="lede">${lede}</p>
       <div class="cta">${cta || `
-        <a class="pill pill-leaf" href="${DELIVEROO}" ${ext}>Order Online</a>
+        <a class="pill pill-leaf" href="${ORDER}" ${ext}>Order Online</a>
         <a class="call" href="${TEL}"><span class="call-dot"><svg aria-hidden="true"><use href="#phone"/></svg></span>${PHONE}</a>`}
       </div>
     </div>
@@ -246,7 +248,7 @@ const visitBlock = `<section class="wrap section section-tight" aria-labelledby=
   </section>`;
 const sham = '<span class="ico"><svg aria-hidden="true"><use href="#shamrock"/></svg></span>';
 
-// ---------- menu (confirmed items only, no prices: prices live on Deliveroo) ----------
+// ---------- menu (confirmed items only, no prices: prices live on Just Eat) ----------
 const menuCats = [
   { id: 'burgers', title: 'Burgers &amp; Subs', note: 'Cooked to order and served hot off the grill.', img: ['burger', 'Gaelic Burger bacon cheeseburger', 300, 320], items: [
     ['Gourmet Burgers', 'Our award-winning burgers, stacked high on a soft brioche bun.', 'Award winner'],
@@ -291,13 +293,13 @@ const pages = [
       <h1>Leinster's Best Burger is <em>Right Here!</em></h1>
       <p class="lede">100% Irish owned and cooked to order in Newhall. Gourmet burgers, fresh-cut chips and coffee, open seven days a week.</p>
       <div class="cta">
-        <a class="pill pill-leaf" href="${DELIVEROO}" ${ext}>Order Now</a>
+        <a class="pill pill-leaf" href="${ORDER}" ${ext}>Order Now</a>
         <a class="call" href="${TEL}"><span class="call-dot"><svg aria-hidden="true"><use href="#phone"/></svg></span>${PHONE}</a>
       </div>
     </div>
     <div class="hero-art">
       <div class="panel" aria-hidden="true"><svg class="panel-leaf"><use href="#shamrock"/></svg></div>
-      <img class="stack" src="/images/burger-stack.webp" alt="Gourmet burger with bacon, melted cheese, beef patties, lettuce, tomato and red onion" width="720" height="1263" fetchpriority="high">
+      <img class="stack" src="/images/burger-stack.webp" alt="Gourmet burger with bacon, melted cheese, beef patties, burger sauce, lettuce and red onion" width="720" height="1292" fetchpriority="high">
       <span class="crumbs" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
       ${stamp}
     </div>
@@ -365,7 +367,7 @@ ${[1, 2].map(() => ['Best Burger in Leinster 2021', 'Best Gourmet Burger Special
       <h2 id="how-h">However you like it, <em>we've got you.</em></h2>
     </div>
     <ol class="grid3">
-      <li class="card step"><span class="num" aria-hidden="true">01</span><span class="ico"><svg aria-hidden="true"><use href="#bag"/></svg></span><h3>Order online</h3><p>Get it delivered to your door through Deliveroo.</p><a href="${DELIVEROO}" ${ext}>Order on Deliveroo →</a></li>
+      <li class="card step"><span class="num" aria-hidden="true">01</span><span class="ico"><svg aria-hidden="true"><use href="#bag"/></svg></span><h3>Order online</h3><p>Get it delivered to your door through Just Eat.</p><a href="${ORDER}" ${ext}>Order on Just Eat →</a></li>
       <li class="card step"><span class="num" aria-hidden="true">02</span><span class="ico"><svg aria-hidden="true"><use href="#pin"/></svg></span><h3>Visit us</h3><p>Grab a seat outside at Newhall, Naas. Open seven days a week.</p><a href="/contact">Hours &amp; directions →</a></li>
       <li class="card step"><span class="num" aria-hidden="true">03</span><span class="ico"><svg aria-hidden="true"><use href="#phone"/></svg></span><h3>Give us a call</h3><p>Questions, allergies or anything else, we're happy to help.</p><a href="${TEL}">${PHONE} →</a></li>
     </ol>
@@ -388,7 +390,7 @@ ${orderBand}`,
       name: 'Menu',
       kicker: 'What\'s cooking',
       h1: 'Our <em>Menu</em>',
-      lede: 'Award-winning burgers, fresh-cut chips and a proper breakfast, all cooked to order. See live prices and order on Deliveroo.',
+      lede: 'Award-winning burgers, fresh-cut chips and a proper breakfast, all cooked to order. See live prices and order on Just Eat.',
       art: `<img class="capsule" src="/images/burger.webp" alt="Gaelic Burger bacon cheeseburger" width="300" height="320">`,
     }),
     body: `  <div class="wrap section section-tight">
@@ -396,7 +398,7 @@ ${orderBand}`,
 ${menuCats.map((c) => `      <a href="#${c.id}">${c.title}</a>`).join('\n')}
     </nav>
 ${menuHtml}
-    <p class="note"><svg aria-hidden="true"><use href="#info"/></svg><span>Prices and the full range are on <a href="${DELIVEROO}" ${ext}>Deliveroo</a>. Got an allergy? Please tell us before you order. <a href="/allergens">Allergen info</a></span></p>
+    <p class="note"><svg aria-hidden="true"><use href="#info"/></svg><span>Prices and the full range are on <a href="${ORDER}" ${ext}>Just Eat</a>. Got an allergy? Please tell us before you order. <a href="/allergens">Allergen info</a></span></p>
   </div>
 
 ${orderBand}`,
@@ -411,7 +413,7 @@ ${orderBand}`,
       kicker: 'Our story',
       h1: 'Follow the <em>rainbow.</em>',
       lede: 'Ireland\'s most enchanting burger experience, right here in Newhall, Naas. 100% Irish owned and proud of it.',
-      art: `<div class="capsule capsule-green"><img src="/images/burger-stack.webp" alt="Gourmet burger with bacon, melted cheese, beef patties and fresh salad" width="720" height="1263"></div>`,
+      art: `<div class="capsule capsule-green"><img src="/images/burger-stack.webp" alt="Gourmet burger with bacon, melted cheese, beef patties, lettuce and burger sauce" width="720" height="1292"></div>`,
       cta: `
         <a class="pill pill-leaf" href="/menu">See the menu</a>
         <a class="pill pill-line" href="/contact">Find us</a>`,
@@ -559,9 +561,10 @@ ${orderBand}`,
         <h2>Get in touch</h2>
         <address><strong>Gaelic Burger</strong><br>Newhall, Naas<br>Co. Kildare, W91 VK8P</address>
         <a class="big-phone" href="${TEL}">${PHONE}</a>
+        <p><a href="mailto:${EMAIL}">${EMAIL}</a></p>
         <div class="cta">
           <a class="pill pill-leaf" href="${MAPS}" ${ext}>Directions</a>
-          <a class="pill pill-line" href="${DELIVEROO}" ${ext}>Order Online</a>
+          <a class="pill pill-line" href="${ORDER}" ${ext}>Order Online</a>
         </div>
         <h3>Good to know</h3>
         <ul class="ticks">
@@ -595,7 +598,7 @@ ${orderBand}`,
     body: `  <section class="wrap section section-tight">
     <div class="prose">
       <p>Our food is prepared in a kitchen that may handle any of the 14 major allergens. We take care to avoid cross-contamination, but we cannot guarantee that any dish is completely free from allergens.</p>
-      <p>Please ask our team in person, or call <a href="${TEL}">${PHONE}</a>, before you order. If you order online, check the allergen details shown with each item on Deliveroo.</p>
+      <p>Please ask our team in person, or call <a href="${TEL}">${PHONE}</a>, before you order. If you order online, check the allergen details shown with each item on Just Eat.</p>
       <h2>The 14 allergens</h2>
       <ul class="chips">
         <li>Cereals containing gluten</li><li>Crustaceans</li><li>Eggs</li><li>Fish</li><li>Peanuts</li><li>Soybeans</li><li>Milk</li><li>Tree nuts</li><li>Celery</li><li>Mustard</li><li>Sesame</li><li>Sulphites</li><li>Lupin</li><li>Molluscs</li>
@@ -614,7 +617,7 @@ ${orderBand}`,
       kicker: 'The small print',
       h1: 'Privacy <em>policy</em>',
       lede: 'Short and simple: this website does not collect your personal information.',
-      art: `<div class="capsule capsule-green"><img src="/images/burger-stack.webp" alt="Gourmet burger with bacon, melted cheese, beef patties and fresh salad" width="720" height="1263"></div>`,
+      art: `<div class="capsule capsule-green"><img src="/images/burger-stack.webp" alt="Gourmet burger with bacon, melted cheese, beef patties, lettuce and burger sauce" width="720" height="1292"></div>`,
       cta: ' ',
     }),
     body: `  <section class="wrap section section-tight">
@@ -626,13 +629,13 @@ ${orderBand}`,
       <ul>
         <li><strong>Google Fonts</strong> loads the fonts on this site. Google may receive your IP address when the fonts load.</li>
         <li><strong>Google Maps</strong> is embedded on our Visit Us page and may set its own cookies when it loads.</li>
-        <li><strong>Online ordering</strong> happens on Deliveroo, which has its own privacy policy.</li>
+        <li><strong>Online ordering</strong> happens on Just Eat, which has its own privacy policy.</li>
         <li><strong>Social links</strong> take you to Facebook, Instagram, LinkedIn and Tripadvisor, each with its own policy.</li>
       </ul>
       <h2>Hosting</h2>
       <p>This site is hosted by Vercel, which keeps basic server logs (such as IP addresses) for security and performance.</p>
       <h2>Your rights</h2>
-      <p>Under GDPR you have the right to access, correct or delete personal data held about you. As this site collects none, there is usually nothing to request, but you can contact us on <a href="${TEL}">${PHONE}</a> with any questions.</p>
+      <p>Under GDPR you have the right to access, correct or delete personal data held about you. As this site collects none, there is usually nothing to request, but you can contact us on <a href="${TEL}">${PHONE}</a> or <a href="mailto:${EMAIL}">${EMAIL}</a> with any questions.</p>
     </div>
   </section>`,
   },
@@ -644,7 +647,7 @@ ${orderBand}`,
     schema: { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Page not found' },
     top: '',
     body: `  <section class="wrap notfound">
-    <img src="/images/burger-stack.webp" alt="" width="720" height="1263">
+    <img src="/images/burger-stack.webp" alt="" width="720" height="1292">
     <h1>Ah, <em>feck.</em></h1>
     <p>That page has wandered off. Let's get you back to the burgers.</p>
     <div class="cta">
